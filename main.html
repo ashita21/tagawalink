@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>TAGAWALINK</title>
-        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="green.css">
         <script src="main.js"></script>
     </head>
     <body>
-        <div id="titlebar"><h1 class="title">TAGAWALINK v.0.1.0</h1></div>
+        <div id="titlebar"><h1 class="title">TAGAWALINK</h1></div>
         <div id="terminal">
             <div id="sidebar">
                 <div class="catselector" id="txtbarsel" onclick="selectType('txtbar')">
@@ -14,6 +14,12 @@
                 </div>
                 <div class="catselector" id="imgbarsel" onclick="selectType('imgbar')">
                     <p class="selecttext">IMAGE FILES</p>
+                </div>
+                <div class="catselector" id="audiobarsel" onclick="selectType('audiobar')">
+                    <p class="selecttext">AUDIO FILES</p>
+                </div>
+                <div class="catselector" id="videobarsel" onclick="selectType('videobar')">
+                    <p class="selecttext">VIDEO FILES</p>
                 </div>
                 <div class="catselector" id="projbarsel" onclick="selectType('projbar')">
                     <p class="selecttext">PROJECTS</p>
@@ -41,14 +47,27 @@
                     <p class="selecttext">img2.jpg</p>
                 </div>
             </div>
+            <div class="filebar" id="audiobar">
+                <div class="selector" id="recording1.wavsel" onclick="selectFile('recording1.wav')">
+                    <p class="selecttext">recording1.wav</p>
+                </div>
+            </div>
+            <div class="filebar" id="videobar">
+                <div class="selector" id="vid1.movsel" onclick="selectFile('vid1.mov')">
+                    <p class="selecttext">vid1.mov</p>
+                </div>
+            </div>
             <div class="filebar" id="projbar">
-                <div class="selector">
-                    <p class="selecttext">.</p>
+                <div class="selector" id="tagawalinksel" onclick="selectFile('tagawalink')">
+                    <p class="selecttext">TAGAWALINK</p>
                 </div>
             </div>
             <div class="filebar" id="sysbar">
                 <div class="selector" id="downloadssel" onclick="selectFile('downloads')">
                     <p class="selecttext">SITE FILES</p>
+                </div>
+                <div class="selector" id="themessel" onclick="selectFile('themes')">
+                    <p class="selecttext">THEME SELECT</p>
                 </div>
             </div>
             <div class="contentpanel" id="file1.txt">
@@ -79,21 +98,63 @@
                 <div class="filenamebar">images/img2.jpg</div>
                 <img src="images/img2.jpg">
             </div>
+            <div class="contentpanel" id="recording1.wav">
+                <div class="filenamebar">audio/recording1.wav</div>
+                <p class="contenttxt">
+                    ERROR: FILE NOT FOUND
+                </p>
+            </div>
+            <div class="contentpanel" id="vid1.mov">
+                <div class="filenamebar">video/vid1.mov</div>
+                <p class="contenttxt">
+                    ERROR: FILE NOT FOUND
+                </p>
+            </div>
+            <div class="contentpanel" id="tagawalink">
+                <div class="filenamebar">PROJECTS/TAGAWALINK</div>
+                <p class="contenttxt">
+                    UNDER CONSTRUCTION
+                </p>
+            </div>
             <div class="contentpanel" id="downloads">
                 <div class="filenamebar">SITE FILES</div>
                 <table>
                     <tr>
-                        <th><p class="tabletxt">STYLESHEET</p></th>
-                        <th><a class="downloadbtn" href="styling.css" target="_blank">CLICK HERE</a></th>
+                        <th><p class="tabletxt">HTML</p></th>
+                        <th><a class="downloadbtn" href="main.html" target="_blank">DOWNLOAD</a></th>
+                    </tr>
+                    <tr>
+                        <th><p class="tabletxt">CSS (GREEN)</p></th>
+                        <th><a class="downloadbtn" href="green.css" target="_blank">DOWNLOAD</a></th>
+                    </tr>
+                    <tr>
+                        <th><p class="tabletxt">CSS (BLACK)</p></th>
+                        <th><a class="downloadbtn" href="black.css" target="_blank">DOWNLOAD</a></th>
+                    </tr>
+                    <tr>
+                        <th><p class="tabletxt">JAVASCRIPT</p></th>
+                        <th><a class="downloadbtn" href="main.js" target="_blank">DOWNLOAD</a></th>
                     </tr>
                     <tr>
                         <th><p class="tabletxt">FAVICON</p></th>
-                        <th><a class="downloadbtn" href="favicon.ico" target="_blank">CLICK HERE</a></th>
+                        <th><a class="downloadbtn" href="favicon.ico" target="_blank">DOWNLOAD</a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="contentpanel" id="themes">
+                <div class="filenamebar">THEME SELECT</div>
+                <table>
+                    <tr>
+                        <th><p class="tabletxt">GREEN (DEFAULT)</p></th>
+                        <th><button id="greenthemebtn" onclick="console.log('changing theme to green')">SELECT THEME</button></th>
+                    </tr>
+                    <tr>
+                        <th><p class="tabletxt">BLACK</p></th>
+                        <th><button id="blackthemebtn" onclick="console.log('changing theme to black')">SELECT THEME</button></th>
                     </tr>
                 </table>
             </div>
         </div>
         <div id="footbar"/>
-        <!--<div id="footbar"><h1 class="foottxt">DESIGNED BY ANDREW TAGAWA</h1></div>-->
     </body>
 </html>

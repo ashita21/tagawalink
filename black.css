@@ -1,13 +1,24 @@
+/*Alternate black background theme*/
+
 /*Tag-level styling*/
 body {
     background-color: #000;
     color: #00e35b;
-    font-family: Verdana, sans-serif;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
     font-weight: 500;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
     overflow-x: auto;
+}
+
+button.filedownload{
+    background-color: #000;
+    border: 1px solid #00e35b;
+    color: #00e35b;
+}
+button.filedownload:hover{
+    cursor: pointer;
 }
 
 hr {
@@ -29,13 +40,16 @@ p.tabletxt {
     font-weight: 400;
     margin: 5px;
 }
-
-.downloadbtn {
+a.downloadbtn {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    color: #fff;
+    color: #00e35b;
     margin: 5px;
+}
+a.downloadbtn:hover {
+    /*color: #9b00e3;*/
+    color: #fff;
 }
 
 /*Title text*/
@@ -166,9 +180,11 @@ p.tabletxt {
 .filenamebar {
     background-color: #00e35b;
     border: 1px solid #00e35b;
-    margin: none;
     color: #000;
     height: 20px;
+    margin: none;
+    position: sticky;
+    top: 0px;
     width: 100%;
 }
 

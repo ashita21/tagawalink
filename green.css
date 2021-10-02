@@ -1,0 +1,240 @@
+/*Tag-level styling*/
+body {
+    background-color: #003013;
+    color: #00e35b;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+button{
+    background-color: #003013;
+    border: 1px solid #00e35b;
+    color: #00e35b;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-size: 15px;
+    margin: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #00e35b;
+    color: #000;
+}
+
+hr {
+    display: block;
+    height: 0.5px;
+    border-color: #00e35b;
+    color: #ddd;
+}
+
+img {
+    width: 100%;
+}
+
+table{
+    font-size: 15px;
+    font-weight: 400;
+}
+p.tabletxt {
+    font-weight: 400;
+    margin: 5px;
+}
+a.downloadbtn {
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #00e35b;
+    border: 1px solid #00e35b;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 5px;
+}
+a.downloadbtn:hover {
+    border: 1px solid #00e35b;
+    background-color: #00e35b;
+    color: #000;
+}
+
+/*Title text*/
+.title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 150;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+}
+#titlebar {
+    background-color: #00e35b;
+    color: #000;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+}
+#footbar {
+    background-color: #00e35b;
+    color: #000;
+    margin: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    height: 10px;
+}
+.foottxt {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 150;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+/*File column*/
+.selecttext {
+    margin: 0px;
+    padding: 5px;
+    top: 50%;
+}
+.catselector{
+    background-color: #003013;
+    border: 1px solid #00e35b;
+    border-right: 10px solid #00e35b;
+    color: #ddd;
+    margin: 10px;
+    height: 40px;
+}
+.catselector :hover{
+    border: 1px solid #00e35b;
+    background-color: #00e35b;
+    color: #000;
+    height: 28px;
+    cursor: pointer;
+}
+.catselectoractive{
+    background-color: #00e35b;
+    border: 1px solid #00e35b;
+    color: #000;
+    margin: 10px;
+    height: 40px;
+}
+.selector{
+    background-color: #003013;
+    border: 1px solid #00e35b;
+    border-right: 10px solid #00e35b;
+    color: #ddd;
+    margin: 10px;
+    height: 40px;
+}
+.selector :hover{
+    border: 1px solid #00e35b;
+    background-color: #00e35b;
+    color: #000;
+    height: 28px;
+    cursor: pointer;
+}
+.selectoractive{
+    background-color: #00e35b;
+    border: 1px solid #00e35b;
+    color: #000;
+    margin: 10px;
+    height: 40px;
+}
+.filebar {
+    border-color:#003013;
+    border-right: 1px solid #00e35b;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 26px;
+    margin-left: 260px;
+    height: 100%;
+    width: 250px;
+    overflow: scroll;
+    float: left;
+    visibility: hidden;
+}
+
+/*Content*/
+.contentpanel {
+    border: 1px solid #00e35b;
+    color: #ddd;
+    position: absolute;
+    padding: 5px;
+    margin-top: 36px;
+    margin-left: 520px;
+    margin-right: 10px;
+    padding: 0px;
+    height: calc(100% - 58px);
+    overflow-y: -moz-scrollbars-vertical;
+    overflow-x:hidden;
+    float: left;
+    visibility: hidden;
+}
+.contenttxt {
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.filenamebar {
+    background-color: #00e35b;
+    border: 1px solid #00e35b;
+    color: #000;
+    height: 20px;
+    margin: none;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+/*ID-level styling*/
+#terminal {
+    width: 100%;
+}
+
+#sidebar {
+    border-color:#003013;
+    border-right: 1px solid #00e35b;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 26px;
+    height: 100%;
+    width: 250px;
+}
+
+/*text selection*/
+::selection {
+    background-color: #00e35b;
+    color: #000;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #003013;
+}
+
+::-webkit-scrollbar-thumb {
+    border-left: 1px solid #00e35b;
+    border-bottom: 1px solid #00e35b;
+    border-top: 1px solid #00e35b;
+    background: #00e35b;
+}
+
+::-webkit-scrollbar-corner {
+    /*border-left: 1px solid #00e35b;
+    border-top: 1px solid #00e35b;*/
+    border: none;
+    background-color: #003013;
+}
