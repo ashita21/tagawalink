@@ -1,5 +1,3 @@
-/*Alternate black background theme*/
-
 /*Tag-level styling*/
 body {
     background-color: #000;
@@ -12,13 +10,18 @@ body {
     overflow-x: auto;
 }
 
-button.filedownload{
+button{
     background-color: #000;
     border: 1px solid #00e35b;
     color: #00e35b;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-size: 15px;
+    margin: 5px;
 }
-button.filedownload:hover{
+button:hover{
     cursor: pointer;
+    background-color: #00e35b;
+    color: #000;
 }
 
 hr {
@@ -40,16 +43,25 @@ p.tabletxt {
     font-weight: 400;
     margin: 5px;
 }
+a {
+    color: #ddd;
+}
 a.downloadbtn {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
     color: #00e35b;
+    border: 1px solid #00e35b;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     margin: 5px;
 }
 a.downloadbtn:hover {
-    /*color: #9b00e3;*/
-    color: #fff;
+    border: 1px solid #00e35b;
+    background-color: #00e35b;
+    color: #000;
 }
 
 /*Title text*/
@@ -153,13 +165,10 @@ a.downloadbtn:hover {
     visibility: hidden;
 }
 
-/*Content column*/
-.filetxt {
-    padding: 5px;
-    color: #ddd;
-}
+/*Content*/
 .contentpanel {
     border: 1px solid #00e35b;
+    color: #ddd;
     position: absolute;
     padding: 5px;
     margin-top: 36px;

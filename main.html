@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>TAGAWALINK</title>
-        <link rel="stylesheet" href="green.css">
+        <link rel="stylesheet" id="theme" href="green.css">
         <script src="main.js"></script>
     </head>
     <body>
@@ -65,6 +65,9 @@
             <div class="filebar" id="sysbar">
                 <div class="selector" id="downloadssel" onclick="selectFile('downloads')">
                     <p class="selecttext">SITE FILES</p>
+                </div>
+                <div class="selector" id="infosel" onclick="selectFile('info')">
+                    <p class="selecttext">SITE INFO</p>
                 </div>
                 <div class="selector" id="themessel" onclick="selectFile('themes')">
                     <p class="selecttext">THEME SELECT</p>
@@ -146,13 +149,21 @@
                 <table>
                     <tr>
                         <th><p class="tabletxt">GREEN (DEFAULT)</p></th>
-                        <th><button id="greenthemebtn" onclick="console.log('changing theme to green')">SELECT THEME</button></th>
+                        <th><button id="greenthemebtn" onclick="greentheme()">SELECT THEME</button></th>
                     </tr>
                     <tr>
                         <th><p class="tabletxt">BLACK</p></th>
-                        <th><button id="blackthemebtn" onclick="console.log('changing theme to black')">SELECT THEME</button></th>
+                        <th><button id="blackthemebtn" onclick="blacktheme()">SELECT THEME</button></th>
                     </tr>
                 </table>
+            </div>
+            <div class="contentpanel" id="info">
+                <div class="filenamebar">SITE INFO</div>
+                <p class="contenttxt">
+                    Designed by Andrew Tagawa 2021<br>
+                    Github: <a href="https://github.com/ashita21" target="_blank">https://github.com/ashita21</a><br>
+                    Website Version: 0.0.1
+                </p>
             </div>
         </div>
         <div id="footbar"/>

@@ -1,0 +1,4 @@
+Finish site design
+Make update automation script
+Implement w/ react(?)
+Write server script

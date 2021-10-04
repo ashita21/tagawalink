@@ -39,3 +39,13 @@ function resetSelectors(){
         allselectors.item(i).className = "selector"
     }
 }
+
+function greentheme(){
+    var theme = document.getElementById('theme')
+    theme.href = "green.css"
+}
+
+function blacktheme(){
+    var theme = document.getElementById('theme')
+    theme.href = "black.css"
+}

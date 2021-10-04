@@ -43,6 +43,9 @@ p.tabletxt {
     font-weight: 400;
     margin: 5px;
 }
+a {
+    color: #ddd;
+}
 a.downloadbtn {
     font-size: 15px;
     font-weight: 400;
